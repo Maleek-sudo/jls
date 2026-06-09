@@ -5,10 +5,10 @@ import Navbar from "./assets/Components/Navbar";
 import CartDrawer from "./assets/Components/CartDrawer";
 
 import Home from "./Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import ProductDetails from "./Pages/ProductDetails";
-import Checkout from "./Pages/Checkout";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import ProductDetails from "./pages/ProductDetails";
+import Checkout from "./pages/Checkout";
 
 export default function App() {
   const [cart, setCart] = useState([]);
