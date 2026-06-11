@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Toast from "../assets/Components/Toast.jsx";
 
 
-export default function Checkout({ cart }) {
+export default function Checkout({ cart, setCart }) {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
@@ -88,6 +88,15 @@ export default function Checkout({ cart }) {
       return;
     }
 
+    const completeOrder = () => {
+      showToast("Order placed successfully!");
+
+      setTimeout(() => {
+        setCart([]); // CLEAR CART
+        setOrderPlaced(true);
+      }, 1500);
+    };
+
     if (paymentMethod === "card") {
       if (
         !cardDetails.cardName ||
@@ -111,12 +120,17 @@ export default function Checkout({ cart }) {
         return;
       }
 
-      showToast("Order placed successfully!");
+      completeOrder();
+      return;
+    }
 
-      setTimeout(() => {
-        setOrderPlaced(true);
-      }, 1500);
+    if (paymentMethod === "bank-transfer") {
+      completeOrder();
+      return;
+    }
 
+    if (paymentMethod === "cod") {
+      completeOrder();
       return;
     }
 
@@ -124,31 +138,9 @@ export default function Checkout({ cart }) {
       showToast("Redirecting to Paystack...");
 
       setTimeout(() => {
-        window.open(
-          "https://paystack.com",
-          "_blank"
-        );
+        setCart([]); // CLEAR CART
+        setOrderPlaced(true);
       }, 1000);
-
-      return;
-    }
-
-    if (paymentMethod === "bank-transfer") {
-      showToast("Order placed successfully!");
-
-      setTimeout(() => {
-        setOrderPlaced(true);
-      }, 1500);
-
-      return;
-    }
-
-    if (paymentMethod === "cod") {
-      showToast("Order placed successfully!");
-
-      setTimeout(() => {
-        setOrderPlaced(true);
-      }, 1500);
 
       return;
     }
