@@ -4,14 +4,14 @@ export default function Hero() {
   return (
     <section className="relative w-full h-[400px] md:h-[480px] overflow-hidden bg-[#111111]">
 
-    
 
-      {/* Geometric placeholder background */}
+
+      {/* Placeholder background */}
       <div className="absolute inset-0">
-        {/* Base dark layer */}
+        {/* Dark layer */}
         <div className="absolute inset-0 bg-[#0d1b2a]" />
 
-        {/* Diagonal stripe texture */}
+        {/* Stripes */}
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -25,7 +25,7 @@ export default function Hero() {
           }}
         />
 
-        {/* Centre radial warmth */}
+        {/* Glowing */}
         <div
           className="absolute inset-0"
           style={{
@@ -35,12 +35,12 @@ export default function Hero() {
         />
       </div>
 
-      {/* Dark overlay */}
+      {/* Dark 0verlay */}
       <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
 
-        {/* Small logo */}
+        {/* Logo */}
         <img
           src={logo}
           alt=""
@@ -48,7 +48,7 @@ export default function Hero() {
           className="w-14 h-14 object-contain mb-5 opacity-90"
         />
 
-        {/* Main headline */}
+        {/* Headline */}
         <h1
           className="text-white font-black uppercase tracking-[0.15em] leading-none"
           style={{
@@ -60,7 +60,7 @@ export default function Hero() {
           JUST A LIFESTYLE
         </h1>
 
-        {/* Gold divider */}
+        {/* Gold */}
         <div className="w-16 h-[2px] bg-[#c9a84c] my-4 rounded-full" />
 
         {/* Tagline */}
@@ -68,7 +68,6 @@ export default function Hero() {
           Est. 2024 &nbsp;·&nbsp; Lagos, Nigeria
         </p>
 
-        {/* CTA */}
         <a
           href="#products"
           className="mt-7 inline-block bg-[#c9a84c] hover:bg-[#b8963e] text-[#0d1b2a] text-xs font-bold tracking-[0.2em] uppercase px-8 py-3 transition-colors duration-200"
@@ -77,7 +76,6 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Bottom fade into page background */}
       <div
         className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none"
         style={{

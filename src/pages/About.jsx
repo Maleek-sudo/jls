@@ -7,7 +7,6 @@ export default function About() {
     return (
         <div className="max-w-6xl mx-auto px-6 py-16">
 
-            {/* Header */}
             <div className="text-center mb-16">
                 <h1 className="text-5xl font-bold mb-4">About JLS</h1>
                 <p className="text-gray-600 max-w-2xl mx-auto">
@@ -17,7 +16,6 @@ export default function About() {
                 </p>
             </div>
 
-            {/* Our Story */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Our Story</h2>
@@ -33,7 +31,6 @@ export default function About() {
                     </p>
                 </div>
 
-                {/* Logo — no container, sits cleanly on white background */}
                 <div className="flex items-center justify-center py-8">
                     <img
                         src={logo}
@@ -43,7 +40,6 @@ export default function About() {
                 </div>
             </div>
 
-            {/* Values */}
             <div className="mb-20">
                 <h2 className="text-3xl font-bold text-center mb-10">
                     What We Stand For
@@ -62,7 +58,6 @@ export default function About() {
                 </div>
             </div>
 
-            {/* Closing */}
             <div className="text-center">
                 <h2 className="text-3xl font-bold mb-4">Join The Movement</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">

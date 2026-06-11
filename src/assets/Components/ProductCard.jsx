@@ -33,12 +33,10 @@ export default function ProductCard({ product, onAddToCart }) {
             </div>
           )}
 
-          {/* Category Badge */}
           <span className="absolute top-2 left-2 bg-white/90 text-[#111111] text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wider">
             {product.category}
           </span>
 
-          {/* Product Badge */}
           {product.badge && (
             <span
               className={`absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 uppercase tracking-wider ${
@@ -54,7 +52,6 @@ export default function ProductCard({ product, onAddToCart }) {
           )}
         </div>
 
-        {/* Product Info */}
         <div className="pt-3 px-1 pb-1">
           <p className="text-sm text-[#111111] font-medium leading-snug line-clamp-2">
             {product.name}
@@ -65,8 +62,7 @@ export default function ProductCard({ product, onAddToCart }) {
           </p>
         </div>
       </Link>
-
-      {/* Add To Cart Button */}
+      
       <div className="px-1 pb-3 mt-2">
         <button
           onClick={() => onAddToCart(product)}

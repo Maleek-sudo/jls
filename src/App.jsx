@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
-import Navbar from "./assets/Components/Navbar";
-import CartDrawer from "./assets/Components/CartDrawer";
+import Navbar from "./assets/Components/Navbar.jsx";
+import CartDrawer from "./assets/Components/CartDrawer.jsx";
 
-import Home from "./Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import ProductDetails from "./pages/ProductDetails";
-import Checkout from "./pages/Checkout";
+import Home from "./Home.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+import ProductDetails from "./pages/ProductDetails.jsx";
+import Checkout from "./pages/Checkout.jsx";
 
 export default function App() {
   const [cart, setCart] = useState([]);

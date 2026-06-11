@@ -83,7 +83,7 @@ export default function Footer() {
     <>
       <footer className="bg-[#0d1b2a] text-white mt-20">
 
-        {/* Top Section */}
+        {/* First Section */}
         <div className="max-w-7xl mx-auto px-6 pt-14 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 border-b border-white/10">
 
           {/* Brand */}
@@ -119,7 +119,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Shop */}
           <div>
             <p className="text-[#c9a84c] text-[11px] font-bold uppercase tracking-[0.2em] mb-5">
               Shop
@@ -166,7 +165,6 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* Help */}
           <div>
             <p className="text-[#c9a84c] text-[11px] font-bold uppercase tracking-[0.2em] mb-5">
               Help
@@ -189,7 +187,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Company */}
           <div>
             <p className="text-[#c9a84c] text-[11px] font-bold uppercase tracking-[0.2em] mb-5">
               Company
@@ -218,7 +215,7 @@ export default function Footer() {
                 href="mailto:hello@justalifestyle.com"
                 className="block text-sm text-white/50 hover:text-white"
               >
-                ✉️ hello@justalifestyle.com
+                ✉️ yungmickey00@gmail.com
               </a>
 
               <a
@@ -231,7 +228,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Newsletter */}
+        {/* Discount Section */}
         <div className="max-w-7xl mx-auto px-6 py-10 border-b border-white/10">
           <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#c9a84c] mb-4">
             Sign Up for Discounts & Updates
@@ -257,10 +254,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-white/30">
-            © 2026 Just A Lifestyle. All rights reserved.
+            @ 2026 Just A Lifestyle. All rights reserved.
           </p>
 
           <p className="text-xs text-white/30">

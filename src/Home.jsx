@@ -1,15 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 
-import Hero from "./assets/Components/Hero";
-import CategoryTabs from "./assets/Components/CategoryTabs";
-import ProductGrid from "./assets/Components/ProductGrid";
-import Pagination from "./assets/Components/Pagination";
-import CartDrawer from "./assets/Components/CartDrawer";
-import Toast from "./assets/Components/Toast";
-import Footer from "./assets/Components/Footer";
+import Hero from "./assets/Components/Hero.jsx";
+import CategoryTabs from "./assets/Components/CategoryTabs.jsx";
+import ProductGrid from "./assets/Components/ProductGrid.jsx";
+import Pagination from "./assets/Components/Pagination.jsx";
+import CartDrawer from "./assets/Components/CartDrawer.jsx";
+import Toast from "./assets/Components/Toast.jsx";
+import Footer from "./assets/Components/Footer.jsx";
 
-import { products } from "./assets/Data/product";
+import { products } from "./assets/Data/product.js";
 
 const ITEMS_PER_PAGE = 8;
 

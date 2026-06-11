@@ -19,7 +19,7 @@ export default function Navbar({
   cartCount = 0,
   onCartOpen,
   searchTerm = "",
-  setSearchTerm = () => {},
+  setSearchTerm = () => { },
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -29,11 +29,9 @@ export default function Navbar({
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-[#e5e5e5]">
       <div
-        className={`max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4 ${
-          showSearch ? "" : "py-2"
-        }`}
+        className={`max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4 ${showSearch ? "" : "py-2"
+          }`}
       >
-        {/* Logo */}
         <Link to="/" className="shrink-0">
           <img
             src={logo}
@@ -42,7 +40,6 @@ export default function Navbar({
           />
         </Link>
 
-        {/* Desktop Search - Homepage Only */}
         {showSearch && (
           <div className="hidden md:flex flex-1 max-w-xl relative">
             <input
@@ -69,7 +66,6 @@ export default function Navbar({
           </div>
         )}
 
-        {/* Right Side */}
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center gap-1 text-sm font-medium text-[#111111]">
             <span>NGN</span>
@@ -79,24 +75,16 @@ export default function Navbar({
             to="/about"
             className="hidden md:block text-sm font-medium text-[#111111] hover:text-[#1a3a3a]"
           >
-            About Us
+            About 
           </Link>
 
           <Link
             to="/contact"
             className="hidden md:block text-sm font-medium text-[#111111] hover:text-[#1a3a3a]"
           >
-            Contact Us
+            Contact 
           </Link>
 
-          {/* <Link
-            to="/login"
-            className="hidden md:block text-sm font-medium text-[#111111] hover:text-[#1a3a3a]"
-          >
-            Login/Sign Up
-          </Link> */}
-
-          {/* Cart */}
           <button
             onClick={onCartOpen}
             className="relative text-[#111111] hover:text-[#1a3a3a]"
@@ -162,7 +150,6 @@ export default function Navbar({
         </div>
       </div>
 
-      {/* Mobile Search - Homepage Only */}
       {showSearch && (
         <div className="md:hidden px-4 pb-3">
           <div className="relative">
@@ -191,7 +178,6 @@ export default function Navbar({
         </div>
       )}
 
-      {/* Mobile Menu Content */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-[#e5e5e5] px-6 py-4">
           <Link
@@ -229,16 +215,9 @@ export default function Navbar({
               onClick={() => setMobileOpen(false)}
               className="block py-2 text-[#111111]"
             >
-              Contact
+              Contact Us
             </Link>
 
-            <Link
-              to="/login"
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 text-[#111111]"
-            >
-              Login
-            </Link>
           </div>
         </div>
       )}

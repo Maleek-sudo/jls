@@ -42,8 +42,8 @@ export const products = [
 
         description: "Premium two-piece track suit in jet black. Slim fit with contrast JLS branding.",
 
-        material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        material: "100% Polyester Performance Fabric — lightweight, moisture-wicking, and quick-dry for training, travel, or everyday wear.",
+        color: "Black and Grey",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 
@@ -58,9 +58,9 @@ export const products = [
         hasVariants: true,
         badge: null,
 
-        description: "Premium two-piece track suit in washed grey. Relaxed fit with embroidered JLS logo.",
+        description: "A sleek two-piece short tracksuit in all black. The zip-up short-sleeve top features the JLS oval logo on the chest and a stunning back graphic — a laurel wreath crest with 'The JLS Club / 2025 Propaganda' in white and red.",
 
-        material: "95% Cotton, 5% Elastane",
+        material: "100% Polyester Performance Fabric — smooth, lightweight, and breathable for warm-weather wear, travel, or casual outings.",
         color: "Black",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
@@ -76,9 +76,9 @@ export const products = [
         hasVariants: true,
         badge: "New",
 
-        description: "Slim-cut denim in rigid indigo wash. Five-pocket styling with JLS patch.",
-        material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        description: "Upgrade your streetwear collection with these premium oversized denim jorts, designed for both comfort and style. Featuring a relaxed wide-leg fit, durable denim construction, and bold graphic detailing, these shorts deliver a modern look with a vintage-inspired edge.",
+        material: "High-quality denim fabric crafted for durability, comfort, and everyday wear.",
+        color: "Black and Blue",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 
@@ -111,10 +111,10 @@ export const products = [
         hasVariants: true,
         badge: null,
 
-        description: "Clean white cotton tank with minimal JLS chest print. Everyday essential.",
+        description: "A clean white, athletic-cut tank top in washed black with contrast cream ribbed trim along the neckline and armholes. Features the iconic JLS monogram logo embroidered on the left chest.",
 
-        material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        material: "100% Combed Cotton Jersey — soft, breathable, and built for all-day wear",
+        color: "White",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 
@@ -129,9 +129,9 @@ export const products = [
         hasVariants: true,
         badge: null,
 
-        description: "Clean white cotton tank with minimal JLS chest print. Everyday essential.",
+        description: "A clean black, athletic-cut tank top in washed black with contrast cream ribbed trim along the neckline and armholes. Features the iconic JLS monogram logo embroidered on the left chest.",
 
-        material: "95% Cotton, 5% Elastane",
+        material: "100% Combed Cotton Jersey — soft, breathable, and built for all-day wear",
         color: "Black",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
@@ -141,17 +141,17 @@ export const products = [
 
     {
         id: 7,
-        name: "JLS Armless - Never Trippin",
+        name: "JLS Armless - Never Tripp'n",
         price: 40000,
         category: "Armless",
         images: [Armless],
         hasVariants: true,
         badge: null,
 
-        description: "Cut-off muscle tee in heavy cotton. Raw hem with JLS back graphic.",
+        description: "A head-turning all-over print tank featuring a dark, fiery street art graphic — masked figure, cash, flames, and bold gold lettering reading (Never Tripp'N) with the #DopeSkill tag at the bottom. Deep red distressed background gives it a raw, underground energy.",
 
-        material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        material: "100% Polyester Sublimation Print — vivid color retention, lightweight, and quick-dry for all-day comfort.",
+        color: "Red",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 
@@ -159,16 +159,16 @@ export const products = [
     },
     {
         id: 8,
-        name: "JLS Top - Oversized",
+        name: "JLS Grind- Graphic Top",
         price: 35000,
         category: "Top",
         images: [Top1],
         hasVariants: true,
         badge: "New",
 
-        description: "Drop-shoulder oversized tee in washed cotton. Statement JLS chest print.",
+        description: "A clean black oversized tee with a subtle JLS oval logo on the front chest. The real statement is on the back — a bold airbrushed-style graphic of a masked, chained-up street character with vibrant red, green, and gold tones, 'GRIND' spray-painted large above, and the elegant'Just A Lifestyle' script flowing beneath",
 
-        material: "95% Cotton, 5% Elastane",
+        material: "100% Heavyweight Combed Cotton — thick and structured with a smooth surface for vivid, high-detail back print.",
         color: "Black",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
@@ -184,9 +184,9 @@ export const products = [
         hasVariants: true,
         badge: null,
 
-        description: "Heavyweight long sleeve in midnight navy. Ribbed cuffs with tonal JLS logo.",
+        description: "A bold statement piece featuring a large back graphic of the JAL anime-style character with graffiti-inspired (Just A Lifestyle) lettering in red, white, and blue. The standout detail is the double-sleeve design — black body with white inner long sleeves peeking through.",
 
-        material: "95% Cotton, 5% Elastane",
+        material: "100% Heavyweight Cotton — structured feel with a premium, streetwear-ready drop",
         color: "Black",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
@@ -195,7 +195,7 @@ export const products = [
     },
     {
         id: 10,
-        name: "JLS Jersey - Gold Edition",
+        name: "JLS Jersey - Marble Wave Polo Jersey",
         price: 65000,
         category: "Jersey",
         images: [JerseySpecial],
@@ -204,8 +204,8 @@ export const products = [
 
         description: "Mesh basketball jersey in black with gold JLS numbering. Limited run.",
 
-        material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        material: "100% Polyester Sublimation Print — smooth, breathable, and lightweight with vivid color",
+        color: "Navy & Burnt Orange Marble",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 
@@ -213,17 +213,17 @@ export const products = [
     },
     {
         id: 11,
-        name: "JLS Jersey - White",
+        name: "JLS 'Member 20' Jersey - White",
         price: 65000,
         category: "Jersey",
         images: [JerseyWhite],
         hasVariants: true,
         badge: "Limited",
 
-        description: "Mesh basketball jersey in black with gold JLS numbering. Limited run.",
+        description: "A clean white all-over tonal wave-pattern jersey with black V-neck collar trim. The front features the JLS.COM.NG branding with a playful duck mascot graphic, while the back displays the bold 'Member 20' numbering — making it feel exclusive and part of a crew.",
 
-        material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        material: "100% Polyester Mesh Sublimation — lightweight, breathable, and built for movement with crisp print detail throughout.",
+        color: "White",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 
@@ -238,9 +238,9 @@ export const products = [
         hasVariants: true,
         badge: "Limited",
 
-        description: "Mesh basketball jersey in black with gold JLS numbering. Limited run.",
+        description: "A clean black all-over tonal wave-pattern jersey with white V-neck collar trim. The front features the JLS.COM.NG branding with a playful duck mascot graphic, while the back displays the bold 'Member 20' numbering — making it feel exclusive and part of a crew.",
 
-        material: "95% Cotton, 5% Elastane",
+        material: "100% Polyester Mesh Sublimation — lightweight, breathable, and built for movement with crisp print detail throughout.",
         color: "Black",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
@@ -258,7 +258,7 @@ export const products = [
 
         description: "Quilted strap slides with moulded footbed. Gold JLS hardware on strap.",
 
-        material: "95% Cotton, 5% Elastane",
+        material: "PU Leather Quilted Upper | EVA Cushioned Footbed | Rubber Outsole — soft underfoot, durable, and built to last.",
         color: "Black",
         sizes: ["40", "41", "42", "43", "44", "45", "46"],
         fit: "Slim Fit",
@@ -267,17 +267,17 @@ export const products = [
     },
     {
         id: 14,
-        name: "JLS Socks",
+        name: "JLS Signature Crew Socks",
         price: 15000,
         category: "Socks",
         images: [Sock],
         hasVariants: false,
         badge: null,
 
-        description: "Mid-length crew socks in black with JLS ankle branding. Pack of 2.",
+        description: "Clean white crew-length socks with ribbed upper, cushioned sole, and the bold JLS monogram logo on the ankle. 'Just A Lifestyle' branding runs along the foot for a subtle finishing touch.",
 
-        material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        material: "80% Cotton, 15% Polyester, 5% Elastane — soft, breathable, and stretchy with all-day cushioned support",
+        color: "White",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 
@@ -285,7 +285,7 @@ export const products = [
     },
     {
         id: 15,
-        name: "JLS Cap - Gold",
+        name: "JLS Cap - Gold(Limited Edition)",
         price: 25000,
         category: "Cap",
         images: [GoldCap],
@@ -295,7 +295,7 @@ export const products = [
         description: "Structured six-panel cap in sand with gold JLS embroidery. Limited edition.",
 
         material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        color: "Gold",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 
@@ -310,9 +310,9 @@ export const products = [
         hasVariants: true,
         badge: "New",
 
-        description: "Drop-shoulder oversized tee in washed cotton. Statement JLS chest print.",
+        description: "Drop-shoulder oversized tee in washed cotton.  The back keeps it clean with the gold JLS logo and 'Just A Lifestyle' branding at the neckline.",
 
-        material: "95% Cotton, 5% Elastane",
+        material: "100% Heavyweight Combed Cotton — dense, premium feel with a smooth print surface for sharp graphic detail.",
         color: "Black",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
@@ -330,8 +330,8 @@ export const products = [
 
         description: "Drop-shoulder oversized tee in washed cotton. Statement JLS chest print.",
 
-        material: "95% Cotton, 5% Elastane",
-        color: "Black",
+        material: "100% Heavyweight Combed Cotton — thick, soft, and premium with a structured oversized drop for that sought-after boxy silhouette.",
+        color: "Black and White",
         sizes: ["S", "M", "L", "XL"],
         fit: "Slim Fit",
 

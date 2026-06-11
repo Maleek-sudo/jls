@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Toast from "../assets/Components/Toast";
+import Toast from "../assets/Components/Toast.jsx";
 
 
 export default function Checkout({ cart }) {
@@ -14,7 +14,7 @@ export default function Checkout({ cart }) {
     address: "",
     apartment: "",
     city: "",
-    state: "Lagos",
+    state: "",
   });
 
   const [cardDetails, setCardDetails] = useState({
@@ -88,7 +88,6 @@ export default function Checkout({ cart }) {
       return;
     }
 
-    // CARD PAYMENT
     if (paymentMethod === "card") {
       if (
         !cardDetails.cardName ||
@@ -121,7 +120,6 @@ export default function Checkout({ cart }) {
       return;
     }
 
-    // PAYSTACK
     if (paymentMethod === "paystack") {
       showToast("Redirecting to Paystack...");
 
@@ -135,7 +133,6 @@ export default function Checkout({ cart }) {
       return;
     }
 
-    // BANK TRANSFER
     if (paymentMethod === "bank-transfer") {
       showToast("Order placed successfully!");
 
@@ -146,7 +143,6 @@ export default function Checkout({ cart }) {
       return;
     }
 
-    // CASH ON DELIVERY
     if (paymentMethod === "cod") {
       showToast("Order placed successfully!");
 
@@ -263,13 +259,12 @@ export default function Checkout({ cart }) {
                   className="border rounded-xl p-4"
                 />
                 <input
-                  placeholder="Postal Code(optional)"
+                  placeholder="Postal Code"
                   className="border rounded-xl p-4"
                 />
               </div>
             </div>
 
-            {/* PAYMENT METHOD */}
             <h2 className="text-2xl font-semibold mt-10 mb-5">
               Payment Method
             </h2>
@@ -293,7 +288,6 @@ export default function Checkout({ cart }) {
                 Pay by Card
               </label>
 
-              {/* Card Details Form */}
               {paymentMethod === "card" && (
                 <div className="border rounded-xl p-5 space-y-4 bg-[#f9f9f9]">
                   <input
@@ -305,7 +299,7 @@ export default function Checkout({ cart }) {
                   />
                   <input
                     name="cardNumber"
-                    placeholder="Card Number (1234 5678 9012 3456)"
+                    placeholder="Card Number (0123 4567 8901 2345)"
                     value={cardDetails.cardNumber}
                     onChange={handleCardInput}
                     maxLength={19}
@@ -333,7 +327,6 @@ export default function Checkout({ cart }) {
                 </div>
               )}
 
-              {/* BANK TRANSFER */}
               <label className="flex items-center gap-3 border rounded-xl p-4 cursor-pointer">
                 <input
                   type="radio"
@@ -405,7 +398,6 @@ export default function Checkout({ cart }) {
                 </div>
               )}
 
-              {/* CASH ON DELIVERY */}
               <label className="flex items-center gap-3 border rounded-xl p-4 cursor-pointer">
                 <input
                   type="radio"
@@ -431,7 +423,6 @@ export default function Checkout({ cart }) {
             </button>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="bg-[#f7f7f7] px-6 md:px-12 py-10 border-l">
             {cart.map((item, index) => (
               <div

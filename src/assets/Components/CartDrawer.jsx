@@ -21,25 +21,21 @@ export default function CartDrawer({
 
   return (
     <>
-      {/* Overlay */}
       <div
         onClick={onClose}
-        className={`fixed inset-0 bg-black/40 z-50 transition-opacity duration-300 ${
-          open
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-0 bg-black/40 z-50 transition-opacity duration-300 ${open
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
+          }`}
       />
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-[340px] bg-white border-l border-[#e5e5e5] z-50 flex flex-col transition-transform duration-300 ${
-          open
-            ? "translate-x-0"
-            : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-full w-[340px] bg-white border-l border-[#e5e5e5] z-50 flex flex-col transition-transform duration-300 ${open
+          ? "translate-x-0"
+          : "translate-x-full"
+          }`}
       >
-        {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-[#e5e5e5]">
           <h2 className="text-[#111111] font-semibold text-base tracking-wide">
             Your Cart
@@ -129,7 +125,6 @@ export default function CartDrawer({
                     </p>
                   )}
 
-                  {/* Quantity Controls */}
                   <div className="flex items-center gap-2 mt-3">
                     <button
                       onClick={() =>
@@ -162,7 +157,6 @@ export default function CartDrawer({
                   </button>
                 </div>
 
-                {/* Item Total */}
                 <div className="text-sm font-semibold text-[#111111]">
                   ₦
                   {(item.price * item.qty).toLocaleString(

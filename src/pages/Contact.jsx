@@ -21,7 +21,6 @@ export default function Contact() {
 
             <div className="grid md:grid-cols-2 gap-12">
 
-                {/* Contact Info */}
                 <div>
                     <h2 className="text-3xl font-bold mb-6">
                         Get In Touch
@@ -99,8 +98,7 @@ export default function Contact() {
 
                     </div>
                 </div>
-
-                {/* Contact Form */}
+                
                 <div className="bg-white shadow-sm rounded-xl p-8 border">
 
                     <h2 className="text-2xl font-bold mb-6">

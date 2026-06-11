@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
-import { products } from "../assets/Data/product";
+import { products } from "../assets/Data/product.js";
 
-import CartDrawer from "../assets/Components/CartDrawer";
-import Toast from "../assets/Components/Toast";
+import CartDrawer from "../assets/Components/CartDrawer.jsx";
+import Toast from "../assets/Components/Toast.jsx";
 
 export default function ProductDetails({
   cart,
@@ -106,7 +106,6 @@ export default function ProductDetails({
 
         <div className="grid md:grid-cols-2 gap-16">
 
-          {/* Images */}
           <div>
             <div className="aspect-square rounded-xl overflow-hidden bg-gray-100">
               {currentImage ? (
@@ -150,7 +149,6 @@ export default function ProductDetails({
             )}
           </div>
 
-          {/* Product Details */}
           <div>
             <span className="inline-block bg-gray-100 px-4 py-2 rounded-full text-sm mb-5">
               {product.category}
